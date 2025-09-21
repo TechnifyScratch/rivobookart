@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Folding Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rivo Book Art</h1>
+
+  <div class="inputs">
+    <label>Page Height (mm): <input id="pageHeight" type="number" value="200"></label>
+    <label>Page Width (mm): <input id="pageWidth" type="number" value="130"></label>
+    <label>Number of Pages: <input id="numPages" type="number" value="300"></label>
+    <label>Word to Fold: <input id="foldWord" type="text" value="Dream"></label>
+    <button onclick="generate()">Generate</button>
+    <button onclick="downloadPDF()">Download PDF Instructions</button>
+  </div>
+
+  <div id="instructions">
+    <h2>Step-by-Step Instructions</h2>
+    <div id="pageNav">
+      <button onclick="prevPage()">⬅ Prev</button>
+      <span id="pageNum">Page 1</span>
+      <button onclick="nextPage()">Next ➡</button>
+    </div>
+    <canvas id="pageCanvas" width="300" height="500"></canvas>
+    <div id="pageText"></div>
+  </div>
+
+  <!-- jsPDF from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

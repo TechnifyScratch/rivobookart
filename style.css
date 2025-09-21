@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f8f8f8;
+  color: #333;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.inputs {
+  margin: 20px;
+}
+
+.inputs label {
+  display: block;
+  margin: 8px 0;
+}
+
+button {
+  margin: 10px;
+  padding: 6px 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#instructions {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+#pageNav {
+  margin: 10px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
